@@ -15,11 +15,11 @@ import CouponsPage from "./pages/CouponsPage";
 import ScratchcardsPage from "./pages/ScratchcardsPage";
 import WithdrawalConverter from "./pages/WithdrawalConverter";
 import RewardsPage from "./pages/RewardsPage";
-
+import Login from "./components/Login";
 import Transaction from "./pages/Transaction";
 import NotificationPage from "./pages/NotificationPage";
 import AnnouncementPage from "./pages/AnnouncementPage";
-// import Referral from "./pages/Referral";
+import Referral from "./pages/ReferralPage";
 import Support from "./pages/Support";
 import FAQ from "./pages/FAQ";
 
@@ -40,6 +40,7 @@ function App() {
           <div className="flex-1 overflow-y-auto">
             <Routes>
               <Route path="/" element={<Dashboard />} />
+              <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/users" element={<Users />} />
               <Route path="users/registration" element={<NewRegistration />} />
               <Route path="users/participants" element={<Participants />} />
@@ -53,9 +54,10 @@ function App() {
               <Route path="/transaction" element={<Transaction />} />
               <Route path="/notification" element={<NotificationPage/>}/>
               <Route path="/notification/announcement" element={<AnnouncementPage />} />
-              {/* <Route path="/referral" element={<Referral />} /> */}
-              // <Route path="/support" element={<Support />} />
+              <Route path="/referral" element={<Referral />} />
+              <Route path="/support" element={<Support />} />
               <Route path="/faq" element={<FAQ />} />
+              <Route path="/login" element={<Login />} />
             </Routes>
           </div>
 
