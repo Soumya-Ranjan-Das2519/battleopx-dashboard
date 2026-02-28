@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink, Outlet, useNavigate, useLocation } from "react-router-dom";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/sidebar";
 import Header from "../components/Header";
 
 

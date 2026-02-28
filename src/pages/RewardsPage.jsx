@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/sidebar";
 import Header from "../components/Header";
 import { FaEllipsisV, FaPlus, FaEdit } from "react-icons/fa";
 

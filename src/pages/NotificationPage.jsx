@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { FaInfoCircle, FaTrash } from "react-icons/fa";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/sidebar";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 
