@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from "react";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/sidebar";
 import Header from "../components/Header";
 
 export default function ReferralPage() {

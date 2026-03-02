@@ -3,6 +3,8 @@ import Sidebar from "../components/sidebar";
 import Header from "../components/Header";
 import { FaInfoCircle } from "react-icons/fa";
 import { FiUpload } from "react-icons/fi";
+import BannerSection from "./BannerSection";
+import MatchRulesSection from "./MatchRulesSection";
 
 const gamesData = Array.from({ length: 5 }, (_, i) => ({
   id: i + 1,
@@ -166,7 +168,7 @@ const pageSubtitle = showAddGame
           : "bg-[#0c1630] border border-[#0d2040]"
       }`}
     >
-      Events
+      Add New Game
     </button>
 
   </div>
@@ -265,6 +267,173 @@ const pageSubtitle = showAddGame
           )}
         </main>
       </div>
+      {activeTab === "rules" && <MatchRulesSection />}
+      {activeTab === "banner" && <BannerSection />}
+      {activeTab === "events" && (
+        
+  <div className="bg-[#0c1630] rounded-2xl border border-[#0d2040] w-full shadow-2xl h-full overflow-y-auto">
+    
+           <Header
+          title="Add New Game"
+          subtitle="Add a new game to the tournament"
+        />
+    <form className="grid grid-cols-1 md:grid-cols-2 p-10 gap-8">
+      
+      {/* Title */}
+      <div>
+        <label className="text-sm font-semibold">
+          Title <span className="text-white">*</span>
+        </label>
+        <input
+          type="text"
+          placeholder="Enter Minimum Amount"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Pool Prize */}
+      <div>
+        <label className="text-sm font-semibold">
+          Pool Prize <span className="text-white">*</span>
+        </label>
+        <input
+          type="text"
+          placeholder="Enter Minimum Amount"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Prize Pool Description */}
+      <div className="md:col-span-2">
+        <label className="text-sm font-semibold">
+          Prize Pool description <span className="text-white">*</span>
+        </label>
+        <textarea
+          rows="3"
+          placeholder="Enter maximum Amount"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm resize-none focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Match Date */}
+      <div>
+        <label className="text-sm font-semibold">
+          Match Date <span className="text-white">*</span>
+        </label>
+        <input
+          type="date"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Match Time */}
+      <div>
+        <label className="text-sm font-semibold">
+          Match Time <span className="text-white">*</span>
+        </label>
+        <input
+          type="time"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Version */}
+      <div>
+        <label className="text-sm font-semibold">
+          Version <span className="text-white">*</span>
+        </label>
+        <input
+          type="text"
+          placeholder="Enter Minimum Amount"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Map */}
+      <div>
+        <label className="text-sm font-semibold">
+          Map <span className="text-white">*</span>
+        </label>
+        <input
+          type="text"
+          placeholder="Enter Minimum Amount"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Match Rules */}
+      <div className="md:col-span-2">
+        <label className="text-sm font-semibold">
+          Match Rules <span className="text-white">*</span>
+        </label>
+        <textarea
+          rows="3"
+          placeholder="Enter maximum Amount"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm resize-none focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Fee Type */}
+      <div>
+        <label className="text-sm font-semibold">
+          Fee Type <span className="text-white">*</span>
+        </label>
+        <input
+          type="text"
+          placeholder="Enter Minimum Amount"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Points / kills */}
+      <div>
+        <label className="text-sm font-semibold">
+          Points/kills <span className="text-white">*</span>
+        </label>
+        <input
+          type="text"
+          placeholder="Enter Minimum Amount"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Sponsored by */}
+      <div>
+        <label className="text-sm font-semibold">
+          Sponsored by
+        </label>
+        <input
+          type="text"
+          placeholder="Enter Minimum Amount"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Spectate URL */}
+      <div>
+        <label className="text-sm font-semibold">
+          Spectate URL
+        </label>
+        <input
+          type="text"
+          placeholder="Enter Minimum Amount"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+        />
+      </div>
+
+      {/* Button */}
+      <div className="md:col-span-2 flex justify-end mt-6">
+        <button
+          type="submit"
+          className="bg-[#00b0e0] hover:bg-[#0095c5] px-8 py-3 rounded-lg text-sm font-semibold tracking-wide transition"
+        >
+          Add Event
+        </button>
+      </div>
+
+    </form>
+  </div>
+)}
     </div>
   );
 }
