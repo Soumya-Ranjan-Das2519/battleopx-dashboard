@@ -1,12 +1,42 @@
-import React from "react";
-import { FiMoreVertical } from "react-icons/fi";
+import React, { useState } from "react";
+import { FiMoreVertical, FiX } from "react-icons/fi";
 import Header from "../components/Header";
 
 export default function BannerSection() {
+  const [showAddBanner, setShowAddBanner] = useState(false);
+  const [title, setTitle] = useState("");
+  const [image1, setImage1] = useState(null);
+  const [image2, setImage2] = useState(null);
+
   const banners = Array.from({ length: 14 }, (_, i) => ({
     id: i + 1,
     title: "FREEFIRE",
   }));
+
+  const handleImageUpload = (e, setImage) => {
+    const file = e.target.files[0];
+    if (file) {
+      setImage(file); // store file object
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you would send the form data (title, image1, image2) to your API
+    console.log({ title, image1, image2 });
+    setShowModal(false);
+    // Reset form
+    setTitle("");
+    setImage1(null);
+    setImage2(null);
+  };
+
+  const handleCancel = () => {
+    setShowModal(false);
+    setTitle("");
+    setImage1(null);
+    setImage2(null);
+  };
 
   return (
     <div className="w-full h-screen flex flex-col bg-[#081028] text-white">
@@ -24,7 +54,10 @@ export default function BannerSection() {
 
         {/* Top Button */}
         <div className="flex justify-end mb-6">
-          <button className="bg-[#00b0e0] hover:bg-[#0095c8] text-white px-6 py-2 rounded-full font-semibold transition">
+          <button
+            onClick={() => setShowAddBanner(true)}
+            className="bg-[#00b0e0] hover:bg-[#0095c8] text-white px-6 py-2 rounded-full font-semibold transition"
+          >
             + Add Banner
           </button>
         </div>
@@ -66,8 +99,7 @@ export default function BannerSection() {
 
           </div>
         </div>
-
       </div>
-    </div>
+       </div>
   );
 }

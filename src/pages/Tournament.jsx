@@ -287,7 +287,7 @@ const pageSubtitle = showAddGame
         <input
           type="text"
           placeholder="Enter Minimum Amount"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white"
         />
       </div>
 
@@ -299,7 +299,7 @@ const pageSubtitle = showAddGame
         <input
           type="text"
           placeholder="Enter Minimum Amount"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white"
         />
       </div>
 
@@ -311,7 +311,7 @@ const pageSubtitle = showAddGame
         <textarea
           rows="3"
           placeholder="Enter maximum Amount"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm resize-none focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm resize-none focus:outline-none focus:border-white"
         />
       </div>
 
@@ -322,7 +322,7 @@ const pageSubtitle = showAddGame
         </label>
         <input
           type="date"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white"
         />
       </div>
 
@@ -333,7 +333,7 @@ const pageSubtitle = showAddGame
         </label>
         <input
           type="time"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white"
         />
       </div>
 
@@ -345,7 +345,7 @@ const pageSubtitle = showAddGame
         <input
           type="text"
           placeholder="Enter Minimum Amount"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white"
         />
       </div>
 
@@ -357,7 +357,7 @@ const pageSubtitle = showAddGame
         <input
           type="text"
           placeholder="Enter Minimum Amount"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white"
         />
       </div>
 
@@ -369,7 +369,7 @@ const pageSubtitle = showAddGame
         <textarea
           rows="3"
           placeholder="Enter maximum Amount"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm resize-none focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm resize-none focus:outline-none focus:border-white"
         />
       </div>
 
@@ -381,7 +381,7 @@ const pageSubtitle = showAddGame
         <input
           type="text"
           placeholder="Enter Minimum Amount"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white"
         />
       </div>
 
@@ -393,7 +393,7 @@ const pageSubtitle = showAddGame
         <input
           type="text"
           placeholder="Enter Minimum Amount"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white"
         />
       </div>
 
@@ -405,7 +405,7 @@ const pageSubtitle = showAddGame
         <input
           type="text"
           placeholder="Enter Minimum Amount"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white"
         />
       </div>
 
@@ -417,7 +417,7 @@ const pageSubtitle = showAddGame
         <input
           type="text"
           placeholder="Enter Minimum Amount"
-          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[#00b0e0]"
+          className="w-full mt-2 bg-slate-800 border border-[#0d2a4a] rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white"
         />
       </div>
 
